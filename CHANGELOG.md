@@ -1,4 +1,6 @@
 ## Unreleased
+### Added
+* Added `getActiveAudioDevice` in `DefaultDeviceController`
 
 ### Changed
 * **Breaking** The returned label for the Built-In Speaker `MediaDevice` has been changed from "Build-in Speaker" to "Buil*t*-in Speaker".
@@ -11,6 +13,7 @@
 - Fixed a crash when opening ObjC demo app on iPhone 5/5c
 
 ## [0.10.0] - 2020-09-10
+
 
 ### Removed
 * **Breaking** Removed audio permission check in `DefaultAudioVideoController` which is performed in `DefaultAudioClientController`. For developers who has their own `AudioClientController` implementation, please make sure to check audio permission in `start()`.
